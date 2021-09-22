@@ -3,9 +3,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+        tr:nth-child(even){
+            background-color: #D6EEEE;
+        }
+    </style>
     <title>HTML5 Tags</title>
 </head>
 <body>
-    W
+    <!--FITP-55: Working with Images-->
+    <h2>Images and Links</h2>
+    
+    <img src="img_1.jpg" alt="art design" width="540" height="540">
+    
+    <h3>Image maps</h3>
+    <img src="img_2.jpg" alt="study" usemap="#study">
+
+    <map name="study">
+        <area shape="poly" coords="50,122,105,287,158,426,277,502,385,564,561,441,675,352,540,290,450,250,424,153,386,11" href="laptop.jpg" alt="laptop" target="_blank">
+        <area shape="circle" coords="720,113,50" href="beats.jpg" alt="head-phones" target="_blank">
+        <area shape="rect" coords="5,405,151,579" href="coffee.jpg" alt="coffee-cup" target="_blank">
+        <area shape="rect" coords="654,291,843,317" href="phone.jpeg" alt="phone" target="_blank">
+    </map>
+
+    <h3>Background Image</h3>
+    <div style="background-image: url('bg_1.jpg'); background-size: cover; width: 540px; height: 540px;"> 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eos tenetur sequi quod, iure velit reiciendis adipisci quam doloribus. Saepe et nam ratione voluptatibus modi atque commodi est quaerat consectetur!
+    </div>
+
+    <h3>Picture Element</h3>
+    <picture>
+        <source media="(min-width: 640px)" srcset="img_3.jpg">
+        <img src="img_4.jpg" alt="colored">
+    </picture>
+    
+    <a href="https://www.google.com" target="_blank">Google Search</a>
+
+    <!--FITP-56: Lists-->
+    <h3>Lists</h3>
+    <ul style="list-style-type: circle;">
+        <li>paper</li>
+        <li>pen</li>
+        <li>drawing board</li>
+        <li>class-room</li>
+    </ul>
+
+    <ul style="list-style-type: none;">
+        <li>paper</li>
+        <li>pen</li>
+        <li>drawing board</li>
+        <li>class-room</li>
+    </ul>
+
+    <ol type="i" start="3">
+        <li>pen</li>
+        <li>paper</li>
+        <li>ink</li>
+    </ol>
+
+    <dl>
+        <dt>What is lorem?</dt>
+        <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore corporis debitis maxime dicta. Error odio voluptatum, sint qui ab numquam ducimus est praesentium rem, similique facere eius, a consectetur velit.</dd>
+    </dl>
+
+    <table>
+        <caption>Time Table</caption>
+        <tr>
+            <th>Days/Time</th>
+            <th>8am - 9am</th>
+            <th>9am - 10am</th>
+            <td rowspan="6">BREAK</td>
+            <th>11am - 12pm</th>
+            <th>12pm - 1pm</th>
+            <th>1pm - 2pm</th>
+        </tr>
+
+        
+        <tr>
+            <th>Monday</th>
+            <td>English</td>
+            <td>maths</td>
+            
+            <td>Science</td>
+            <td>Civil Edu</td>
+            <td>Religious Studies</td>
+        </tr>
+
+        <tr>
+            <th>Tuesday</th>
+            <td>Social Studies</td>
+            <td>Health Edu</td>
+            
+            <td>Computer Science</td>
+            <td>maths</td>
+            <td>Agric</td>
+        </tr>
+
+        <tr>
+            <th>Wednesday</th>
+            <td>Agric</td>
+            <td>maths</td>
+            
+            <td>Science</td>
+            <td>Fine Art</td>
+            <td>English</td>
+        </tr>
+
+        <tr>
+            <th>Thursday</th>
+            <td>Computer Science</td>
+            <td>Social Studies </td>
+            
+            <td>Science</td>
+            <td>Civil Edu</td>
+            <td>Religious Studies</td>
+        </tr>
+
+        <tr>
+            <th>Friday</th>
+            <td>English</td>
+            <td>Agric</td>
+            
+            <td>Language</td>
+            <td>Sleeping</td>
+            <td>Health Educ</td>
+        </tr>
+
+    </table>
+
 </body>
 </html>
