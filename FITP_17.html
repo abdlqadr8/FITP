@@ -19,27 +19,27 @@
     <!--FITP-55: Working with Images-->
     <h2>Images and Links</h2>
     
-    <img src="img_1.jpg" alt="art design" width="540" height="540">
+    <img src="img/img_1.jpg" alt="art design" width="540" height="540">
     
     <h3>Image maps</h3>
-    <img src="img_2.jpg" alt="study" usemap="#study">
+    <img src="img/img_2.jpg" alt="study" usemap="#study">
 
     <map name="study">
-        <area shape="poly" coords="50,122,105,287,158,426,277,502,385,564,561,441,675,352,540,290,450,250,424,153,386,11" href="laptop.jpg" alt="laptop" target="_blank">
-        <area shape="circle" coords="720,113,50" href="beats.jpg" alt="head-phones" target="_blank">
-        <area shape="rect" coords="5,405,151,579" href="coffee.jpg" alt="coffee-cup" target="_blank">
-        <area shape="rect" coords="654,291,843,317" href="phone.jpeg" alt="phone" target="_blank">
+        <area shape="poly" coords="50,122,105,287,158,426,277,502,385,564,561,441,675,352,540,290,450,250,424,153,386,11" href="img/laptop.jpg" alt="laptop" target="_blank">
+        <area shape="circle" coords="720,113,50" href="img/beats.jpg" alt="head-phones" target="_blank">
+        <area shape="rect" coords="5,405,151,579" href="img/coffee.jpg" alt="coffee-cup" target="_blank">
+        <area shape="rect" coords="654,291,843,317" href="img/phone.jpeg" alt="phone" target="_blank">
     </map>
 
     <h3>Background Image</h3>
-    <div style="background-image: url('bg_1.jpg'); background-size: cover; width: 540px; height: 540px;"> 
+    <div style="background-image: url('img/bg_1.jpg'); background-size: cover; width: 540px; height: 540px;"> 
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eos tenetur sequi quod, iure velit reiciendis adipisci quam doloribus. Saepe et nam ratione voluptatibus modi atque commodi est quaerat consectetur!
     </div>
 
     <h3>Picture Element</h3>
     <picture>
-        <source media="(min-width: 640px)" srcset="img_3.jpg">
-        <img src="img_4.jpg" alt="colored">
+        <source media="(min-width: 640px)" srcset="img/img_3.jpg">
+        <img src="img/img_4.jpg" alt="colored">
     </picture>
     
     <a href="https://www.google.com" target="_blank">Google Search</a>
@@ -72,6 +72,10 @@
     </dl>
 
     <table>
+        <colgroup>
+            <col span="3">
+            <col span="1" style="background-color: #D6EEEE;"> 
+        </colgroup>
         <caption>Time Table</caption>
         <tr>
             <th>Days/Time</th>
